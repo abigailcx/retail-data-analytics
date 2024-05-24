@@ -1,16 +1,17 @@
 # Retail Analytics with Power BI
 
-## Table of Contents
+### Table of Contents
 - [Overview](#Overview)
 - [Data Extraction and Transformation](#data-extraction-and-transformation)
 - [Data Modelling](#data-modelling)
-- [DAX Measures](#dax-measures)
 - [The Report](#the-report)
   - [Executive Summary](#data-extraction-and-transformation)
   - [Customer Detail](#customer-detail)
   - [Product Detail](#product-detail)
   - [Stores Map](#stores-map)
   - [Stores Drillthrough](#stores-drillthrough)
+- [SQL Metrics](#sql-metrics)
+- [License](#license)
 
 
 ## Overview
@@ -25,8 +26,6 @@ In order to enable the use of Power BI's time intelligence functions, a continuo
 The data model consists of 6 tables, 5 of which are modelled in a star schema and 1 of which is the measures table.
 
 ![star schema data model for retail data](./assets/Screenshot_data_model.png)
-
-## DAX Measures
 
 ## The Report
 
@@ -49,9 +48,11 @@ The product detail page provides an in-depth look at which products within the i
 
 ![product details dashboard](./assets/Screenshot_product_details.png)
 
-![product details for pets category in the UK](./assets/screen_recording_product_1.mov)
+Filtering product data for UK sales in the pets category
+![product details for pets category in the UK](./assets/product_pets_uk.gif)
 
-![product details for toys and games category in Germany](./assets/screen_recording_product_2.mov)
+Filtering product data for German sales in the toys and games category
+![product details for toys and games category in Germany](./assets/product_toysandgames_germany.gif)
 
 
 ### Stores Map
@@ -67,3 +68,9 @@ Adding a tooltip provides a quick comparison view of the year-to-date profits an
 From the stores map, the user can right-click and select to 'drill through' to a stores drillthrough page which contains profit, revenue and orders data. The page is interactive, so the user can choose to view sales data for a particular category by clicking the bar on the bar chart of the category that they want to analyse.
 
 ![Falkirk store data drillthrough dashboard](./assets/Screenshot_falkirk_drillthrough.png)
+
+## SQL Metrics
+More data insights were extracted without the use of Power BI or other visualisation tools in the form of SQL queries. The queries and their results are stored in the queries and queries_results directories respectively.
+
+## License
+This project is licensed under the MIT License.
