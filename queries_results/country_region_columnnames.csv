@@ -1,0 +1,6 @@
+"table_catalog","table_schema","table_name","column_name"
+"orders-db","public","country_region","sale_price"
+"orders-db","public","country_region","product_quantity"
+"orders-db","public","country_region","cost_price"
+"orders-db","public","country_region","dates"
+"orders-db","public","country_region","country"
